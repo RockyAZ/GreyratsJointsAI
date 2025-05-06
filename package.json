@@ -1,0 +1,12 @@
+{
+  "name": "com.greyratslab.greyratsjointsai",
+  "version": "1.0.0",
+  "displayName": "Greyrats Joints AI",
+  "description": "A package for joint RL with Unity ML.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Antonyus Greyrat",
+    "email": "greyratslab@gmail.com",
+    "url": "https://assetstore.unity.com/publishers/105281"
+  }
+}
