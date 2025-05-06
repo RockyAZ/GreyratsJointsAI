@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Greyrats.JointAI.Analysis;
 
 namespace Greyrats.JointAI.ARO
 {

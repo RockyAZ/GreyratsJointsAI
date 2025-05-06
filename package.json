@@ -8,5 +8,9 @@
     "name": "Antonyus Greyrat",
     "email": "greyratslab@gmail.com",
     "url": "https://assetstore.unity.com/publishers/105281"
+  },
+  "dependencies": {
+    "com.unity.ml-agents": "3.0.0",
+    "com.madsbangh.easybuttons": "https://github.com/madsbangh/EasyButtons.git#upm"
   }
 }

@@ -1,0 +1,26 @@
+{
+    "name": "Greyrats.JointAI",
+    "rootNamespace": "",
+    "references": [
+        "Unity.ML-Agents",
+        "Unity.ML-Agents.CommunicatorObjects",
+        "Unity.ML-Agents.Editor",
+        "Unity.ML-Agents.Editor.Tests",
+        "Unity.ML-Agents.Editor.Tests.PublicAPI",
+        "Unity.ML-Agents.Runtime.Sensor.Tests",
+        "Unity.ML-Agents.Runtime.Tests",
+        "Unity.ML-Agents.Runtime.Utils.Tests",
+        "EasyButtons",
+        "EasyButtons.Editor",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -5,6 +5,7 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 using System;
+using Greyrats.JointAI.Analysis;
 
 namespace Greyrats.JointAI.ARO
 {
