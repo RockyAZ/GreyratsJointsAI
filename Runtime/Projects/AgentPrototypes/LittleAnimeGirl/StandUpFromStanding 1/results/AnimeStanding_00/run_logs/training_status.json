@@ -1,0 +1,110 @@
+{
+    "Anime": {
+        "checkpoints": [
+            {
+                "steps": 1999997,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-1999997.onnx",
+                "reward": -2.2965342642120574,
+                "creation_time": 1746484003.8714583,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-1999997.pt"
+                ]
+            },
+            {
+                "steps": 2999999,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-2999999.onnx",
+                "reward": -1.952594937015668,
+                "creation_time": 1746485704.0067499,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-2999999.pt"
+                ]
+            },
+            {
+                "steps": 3999999,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-3999999.onnx",
+                "reward": -1.7314281057977743,
+                "creation_time": 1746487540.213501,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-3999999.pt"
+                ]
+            },
+            {
+                "steps": 4999998,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-4999998.onnx",
+                "reward": -1.5582215866289642,
+                "creation_time": 1746489477.8430436,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-4999998.pt"
+                ]
+            },
+            {
+                "steps": 5999998,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-5999998.onnx",
+                "reward": -1.4749167720619776,
+                "creation_time": 1746491454.0146525,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-5999998.pt"
+                ]
+            },
+            {
+                "steps": 6999997,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-6999997.onnx",
+                "reward": -1.4090463378622933,
+                "creation_time": 1746493493.410301,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-6999997.pt"
+                ]
+            },
+            {
+                "steps": 7999998,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-7999998.onnx",
+                "reward": -1.3578781676418035,
+                "creation_time": 1746495586.3972888,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-7999998.pt"
+                ]
+            },
+            {
+                "steps": 8999999,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-8999999.onnx",
+                "reward": -1.3208441677829073,
+                "creation_time": 1746497746.8533266,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-8999999.pt"
+                ]
+            },
+            {
+                "steps": 9999999,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-9999999.onnx",
+                "reward": -1.2990151404071661,
+                "creation_time": 1746499981.02352,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-9999999.pt"
+                ]
+            },
+            {
+                "steps": 10000006,
+                "file_path": "results\\AnimeStanding_00\\Anime\\Anime-10000006.onnx",
+                "reward": -1.299127171340253,
+                "creation_time": 1746499981.1107807,
+                "auxillary_file_paths": [
+                    "results\\AnimeStanding_00\\Anime\\Anime-10000006.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000006,
+            "file_path": "results\\AnimeStanding_00\\Anime.onnx",
+            "reward": -1.299127171340253,
+            "creation_time": 1746499981.1107807,
+            "auxillary_file_paths": [
+                "results\\AnimeStanding_00\\Anime\\Anime-10000006.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}
