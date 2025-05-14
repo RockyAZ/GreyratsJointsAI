@@ -22,6 +22,7 @@ namespace Greyrats.JointAI.JointAgent
 
 		public void ForceEndEpisode(float reward)
 		{
+			ON_REWARD?.Invoke(reward, "ForceEndEpisode");
 			SetReward(reward);
 			ON_FORCE_END?.Invoke();
 			EndEpisode();
@@ -58,6 +59,7 @@ namespace Greyrats.JointAI.JointAgent
 			{
 				tmp.EpisodeObservation(sensor);
 			}
+
 		}
 
 		public override void OnActionReceived(ActionBuffers actions)

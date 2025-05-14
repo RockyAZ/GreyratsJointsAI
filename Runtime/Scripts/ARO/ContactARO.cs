@@ -11,12 +11,13 @@ namespace Greyrats.JointAI.ARO
 		[Space]
 		public bool endOnFatalContactFORCE;
 		public bool dontEndOnFatalContactFORCE;
-		public bool observeRewardContacting;
+		public bool observeContacting;
+		public bool RewardOnContacting;
 		[Space]
 		public float FatalContactReward = -1;
 		public float updateContactReward = -0.01f;
 
-		public override int ObservationsCount { get => observeRewardContacting ? components.Length : 0; }
+		public override int ObservationsCount { get => observeContacting ? components.Length : 0; }
 
 		void OnCollision(ContactType ctype, ContactComponent cc)
 		{
@@ -51,7 +52,7 @@ namespace Greyrats.JointAI.ARO
 
 		public override void EpisodeObservation(VectorSensor sensor)
 		{
-			if (observeRewardContacting)
+			if (observeContacting)
 			{
 				foreach (var tmp in components)
 				{
@@ -62,12 +63,14 @@ namespace Greyrats.JointAI.ARO
 
 		public override void EpisodeReward()
 		{
-			if (observeRewardContacting)
+			if (RewardOnContacting)
 			{
 				foreach (var tmp in components)
 				{
 					if (tmp.Contacting)
 						agent.AddTitledReward(updateContactReward * RewardMultiplier, "contact");
+					else
+						agent.AddTitledReward(0, "contact");
 				}
 			}
 		}

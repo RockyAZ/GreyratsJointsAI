@@ -53,18 +53,26 @@ namespace Greyrats.JointAI.ARO
 			}
 		}
 
-		private float CalculateCurrentDistanceValue(GroundDistanceComponent gdt, bool useCurve)
-		{
-			float diff = -(Mathf.Abs(savedComponentToDistance[gdt] - gdt.GetDistance(LayerToCheck)));
-			float result = diff / savedComponentToDistance[gdt];
-			if (useFunctionCurve && useCurve)
-			{
-				CurrentDistance = functionCurve01.Evaluate(result + 1); //+1 to convert to 0-1 range
-				return CurrentDistance;
-			}
+		// private float CalculateCurrentDistanceValue(GroundDistanceComponent gdt, bool useCurve)
+		// {
+		// 	float diff = -(Mathf.Abs(savedComponentToDistance[gdt] - gdt.GetDistance(LayerToCheck)));
+		// 	float result = diff / savedComponentToDistance[gdt];
+		// 	if (useFunctionCurve && useCurve)
+		// 	{
+		// 		CurrentDistance = functionCurve01.Evaluate(result + 1); //+1 to convert to 0-1 range
+		// 		return CurrentDistance;
+		// 	}
 
-			CurrentDistance = result;
-			return result;
+		// 	CurrentDistance = result;
+		// 	return result;
+		// }
+
+		public float CalculateCurrentDistanceValue(GroundDistanceComponent gdt, bool useCurve)
+		{
+			float initialDistance = savedComponentToDistance[gdt];
+			float currentDistance = gdt.GetDistance(LayerToCheck);
+			float absoluteDifference = Mathf.Abs(initialDistance - currentDistance);
+			return 1.0f / (absoluteDifference + 1.0f);
 		}
 	}
 }

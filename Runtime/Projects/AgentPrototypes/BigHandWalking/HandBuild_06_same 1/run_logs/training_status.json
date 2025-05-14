@@ -1,0 +1,38 @@
+{
+    "Hand": {
+        "checkpoints": [
+            {
+                "steps": 49999994,
+                "file_path": "results\\Hand_07\\Hand\\Hand-49999994.onnx",
+                "reward": 163.66783550949694,
+                "creation_time": 1747238984.893806,
+                "auxillary_file_paths": [
+                    "results\\Hand_07\\Hand\\Hand-49999994.pt"
+                ]
+            },
+            {
+                "steps": 50000060,
+                "file_path": "results\\Hand_07\\Hand\\Hand-50000060.onnx",
+                "reward": 163.67665004045918,
+                "creation_time": 1747238984.98975,
+                "auxillary_file_paths": [
+                    "results\\Hand_07\\Hand\\Hand-50000060.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 50000060,
+            "file_path": "results\\Hand_07\\Hand.onnx",
+            "reward": 163.67665004045918,
+            "creation_time": 1747238984.98975,
+            "auxillary_file_paths": [
+                "results\\Hand_07\\Hand\\Hand-50000060.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.6.0+cu124"
+    }
+}

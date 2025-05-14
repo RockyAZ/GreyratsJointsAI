@@ -48,6 +48,21 @@ namespace Greyrats.JointAI.ARO
 			}
 		}
 
+		void OnTriggerEnter(Collider other)
+		{
+			if (fatalTagsToUse.Contains(other.gameObject.tag))
+			{
+				COLLISION?.Invoke(ContactType.Fatal, this);
+				_contacting = true;
+			}
+		}
+		void OnTriggerExit(Collider other)
+		{
+			if (fatalTagsToUse.Contains(other.gameObject.tag))
+			{
+				_contacting = false;
+			}
+		}
 		public void ResetContact()
 		{
 			_contacting = false;
